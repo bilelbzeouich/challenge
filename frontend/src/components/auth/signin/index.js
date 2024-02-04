@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import { NavLink } from "react-router-dom";
 
 const Signin = () => {
   return (
@@ -7,11 +8,19 @@ const Signin = () => {
       <div class="login-page">
         <div class="form">
           <form class="login-form">
-            <input type="text" placeholder="username" />
+            <input type="text" placeholder="name" />
+            <input type="text" placeholder="surname" />
+            <input type="mail" placeholder="e-mail" />
+            <input type="phone" placeholder="phone" />
+            <input type="text" placeholder="addresse" />
             <input type="password" placeholder="password" />
-            <button>login</button>
+            <NavLink to="/Qa">
+              <button>Signup</button>
+            </NavLink>
             <p class="message">
-              Not registered? <a href="#">Create an account</a>
+              <a href="#">
+                <NavLink to="/Login">Signin</NavLink>
+              </a>
             </p>
           </form>
         </div>

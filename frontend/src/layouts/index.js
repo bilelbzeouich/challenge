@@ -7,13 +7,13 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
-      {/* Render default home page if no specific route matches */}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Outlet />
+      {/* Render default home page if no specific route matches */}
     </div>
   );
 };
 
-export default Layout;
+export default Layout; 

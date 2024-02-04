@@ -9,11 +9,16 @@ const Login = () => {
           <form class="login-form">
             <input type="text" placeholder="username" />
             <input type="password" placeholder="password" />
-            <button>login</button>
+            <NavLink to="/">
+              {" "}
+              <NavLink to="/User">
+                <button> login</button>
+              </NavLink>
+            </NavLink>
             <p class="message">
               Not registered?{" "}
               <a href="#">
-                <NavLink to="/signin">Create an account</NavLink>
+                <NavLink to="/signup">Create an account</NavLink>
               </a>
             </p>
           </form>

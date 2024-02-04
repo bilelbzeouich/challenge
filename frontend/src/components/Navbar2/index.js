@@ -3,7 +3,8 @@ import logo from "../../images/white.png";
 import "./index.scss";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export const Navbar = () => {
+import { faPerson, faUser } from "@fortawesome/free-solid-svg-icons";
+export const Navbar2 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -34,15 +35,8 @@ export const Navbar = () => {
           <button className="sign-up">sign up</button>
         </div>
       </ul>
-      <div className="button-container">
-        <NavLink to="/login">
-          <button className="Login">Login</button>
-        </NavLink>
-        <NavLink to="/signup">
-          <button className="sign-up">sign up</button>
-        </NavLink>
-      </div>
+      <div className="button-container"></div>
     </nav>
   );
 };
-export default Navbar;
+export default Navbar2;

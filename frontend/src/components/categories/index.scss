@@ -1,0 +1,29 @@
+.category {
+    justify-content: center;
+    text-align: center;
+
+    .title h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+    }
+
+    .card img {
+        width: 400px;
+    }
+
+    .cards {
+
+        margin-top: 1rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        gap: 5rem;
+
+        p {
+            font-size: large;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.images img {
+
+    margin: 1rem;
+    width: 400px;
+
+}
+
+.image {
+    justify-content: center;
+    display: flex;
+    border: solid 1px black;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.texte h1 {
+    color: white;
+    font-size: 6rem;
+    /* Set the font size to 2rem for a big title */
+    white-space: pre-line;
+    /* Allow line breaks */
+}
+
+.slide-container {
+    object-fit: cover;
+    /* This property is for <img> elements and won't work for background images */
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    background-image: url('../../images/flous.jpg');
+
+    /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover;
+    /* This property will make the background image cover the entire container */
+    background-position: center;
+    /* This property will center the background image */
+}

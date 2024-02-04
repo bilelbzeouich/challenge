@@ -1,0 +1,75 @@
+ .form-container {
+     width: 400px;
+     margin: 50px auto;
+     padding: 20px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     background-color: #f9f9f9;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+ }
+
+ .title {
+     justify-content: center;
+     text-align: center;
+     margin: 2rem;
+     font-size: 1rem;
+     font-weight: bold;
+ }
+
+ .NavLink,
+ .NavLink p {
+     text-decoration: none !important;
+     /* Remove underline effect */
+ }
+
+ .NavLink:hover,
+ .NavLink p:hover {
+     text-decoration: none !important;
+     /* Remove underline effect on hover */
+ }
+
+ .flat-button {
+     border: 1px solid #fcb81e;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     height: 2rem;
+     display: flex;
+     margin: 1rem;
+     text-decoration: none;
+     /* Make the container a flex container */
+     transition: background-color 0.3s, color 0.3s;
+
+     /* Add transition for smooth effect */
+     a {
+         text-decoration: none;
+         /* Remove underline effect */
+     }
+
+     &:hover {
+         text-decoration: none;
+         background-color: #fcb81e;
+         /* Change background color on hover */
+         color: white;
+         /* Change text color on hover */
+     }
+
+     p {
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: 1.5rem;
+         font-weight: bold;
+         text-decoration: none;
+         text-decoration: none;
+         /* Initially hide the text */
+         transition: opacity 0.5s;
+         /* Add transition for fade-in effect */
+     }
+
+     &:hover p {
+         opacity: 1;
+         text-decoration: none;
+         /* Fade in the text on hover */
+     }
+ }

@@ -1,12 +1,17 @@
 import { useState, React, useEffect } from "react";
 import axios from "axios";
 import "./index.scss";
-import test from "../../images/download.jpg";
+import Slider from "../slider";
+import Categories from "../categories";
+import Card from "../card";
+import Products from "../products";
 
 export const Home = () => {
   return (
     <div className="homepage-container">
-      <img className="homepage-image" alt="image" src={test} />
+      <Slider />
+      <Categories />
+      <Products />
     </div>
   );
 };
